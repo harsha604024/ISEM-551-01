@@ -11,7 +11,6 @@ function validateForm() {
   var x = document.forms["personalDetails"]["firstname"].value;
   var y = document.forms["personalDetails"]["lastname"].value;
   var z = document.forms["personalDetails"]["age"].value;
-  var z1 = document.forms["personalDetails"]["gender"].value;
   if (x == null || x == ""){
       alert("First Name should be Filled out");
 	  return false;
@@ -22,10 +21,6 @@ function validateForm() {
 	  }
   if (z == null || z == ""){
       alert("Age should be Filled out");
-	  return false;
-	  }
-  if (z1 == null || z1 == ""){
-      alert("Gender should be Filled out");
 	  return false;
 	  }
 }
@@ -104,7 +99,7 @@ section{
 				Gender : </br>
 				<input type="text" name="gender" id="gender"></br></br>
 				Email : </br>
-				<input type="text" name="gender" id="gender"></br></br>
+                                <input type="text" name="Email" id="Email"></br></br>
 				<input type="submit" name="simpleFormSubmit" id="simpleFormSubmit" value="Submit">
 			</form>
 	</div>
@@ -113,7 +108,7 @@ section{
 
         <section>
             <h2>Please register to buy</h2>
-            <img src="../simplepgm/images/lg.png">
+            <img src="lg.png">
         </section>
     
 </body>
