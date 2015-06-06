@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+ <title> The Ultimate Shoe Store</title>
+</head>
+<Script>
+function validateForm() {
+  var x = document.forms["personalDetails"]["firstname"].value;
+  var y = document.forms["personalDetails"]["lastname"].value;
+  var z = document.forms["personalDetails"]["age"].value;
+  var z1 = document.forms["personalDetails"]["gender"].value;
+  if (x == null || x == ""){
+      alert("First Name should be Filled out");
+	  return false;
+	  }
+  if (y == null || y == ""){
+      alert("Last Name should be Filled out");
+	  return false;
+	  }
+  if (z == null || z == ""){
+      alert("Age should be Filled out");
+	  return false;
+	  }
+  if (z1 == null || z1 == ""){
+      alert("Gender should be Filled out");
+	  return false;
+	  }
+}
+</Script>
+<style>
+body {
+    background: #f9f9f9;
+}
+header {
+    background:#11B3BB;
+    text-align:center;
+    padding:5px;
+}
+header h1,header h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav {
+    width:15%;
+    float:left;
+    padding: 50px;
+    
+}
+ul{
+list-style: none;}
+ul li a{
+        color: #444444;
+        font-weight: 500;
+}
+.nav li a:hover{
+    background:#11B3BB;
+    color: #fff;
+}
+
+aside{
+    float: left;
+     width: 20%;
+    background: #fff;
+    padding: 6% 5% 24% 5%;
+}
+aside form{
+    color: #444444;
+}
+aside form input{margin: 2% 0;
+color: #444444;
+border-color: #cccccc;}
+    
+section{
+    float:left;
+    width: 65%;
+    background: #fff;
+    padding: 2% 10%;
+}
+
+</style>
+<body>  
+	<header>
+        <h1>L & N Electronics</h1>
+		<h3>Most Trusted!.</h3>
+    </header>
+
+        <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+        </ul>
+        
+        <aside>
+            <form name="personalDetails" id="personalDEtails" action="success.html"  onsubmit="return validateForm()" method="POST">
+				First Name : </br>
+				<input type="text" name="firstname" id="firstname"></br></br>
+				Last Name : </br>
+				<input type="text" name="lastname" id="lastname"></br></br>
+				Age : </br>
+				<input type="text" name="age" id="age"></br></br>
+				Gender : </br>
+				<input type="text" name="gender" id="gender"></br></br>
+				Email : </br>
+				<input type="text" name="gender" id="gender"></br></br>
+				<input type="submit" name="simpleFormSubmit" id="simpleFormSubmit" value="Submit">
+			</form>
+	</div>
+    
+        </aside>
+
+        <section>
+            <h2>Please register to buy</h2>
+            <img src="../simplepgm/images/lg.png">
+        </section>
+    
+</body>
+</html>
+
